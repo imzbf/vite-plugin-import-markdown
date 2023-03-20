@@ -1,0 +1,34 @@
+{
+  "name": "@vavt/vite-plugin-import-markdown",
+  "version": "1.0.0",
+  "description": "Import markdown as a module",
+  "license": "MIT",
+  "author": {
+    "name": "zbf",
+    "email": "zbfcqtl@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imzbf/vite-plugin-import-markdown"
+  },
+  "files": [
+    "plugin"
+  ],
+  "main": "./plugin/index.cjs",
+  "module": "./plugin/index.mjs",
+  "types": "./plugin/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./plugin/index.d.ts",
+      "import": "./plugin/index.mjs",
+      "require": "./plugin/index.cjs"
+    }
+  },
+  "keywords": [
+    "vite",
+    "markdown"
+  ],
+  "peerDependencies": {
+    "vite": ">=2.0.0"
+  }
+}
