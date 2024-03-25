@@ -6,6 +6,7 @@ export default () => {
       if (/\.md$/.test(id)) {
         return {
           code: `export default ${JSON.stringify(code)};`,
+          map: null,
         };
       } else {
         return null;
